@@ -1,7 +1,7 @@
 on: [workflow_dispatch]
 name: Create Azure resources
 jobs:
-  build-and-deploy:
+  create-environment:
     runs-on: ubuntu-latest
     steps:
 
