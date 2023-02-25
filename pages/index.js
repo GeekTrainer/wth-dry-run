@@ -1,15 +1,18 @@
 import Link from "next/link";
 import dbConnect from "../lib/dbConnect";
 import Pet from "../models/Pet";
-// import useEffect
-import { useEffect } from "react";
+
+// TODO: Import Hours component
+import Hours from "../components/Hours";
 
 const Index = ({ pets }) => {
 
-  // TODO: add code here
-
   return (
     <>
+
+      {/* TODO: Display Hours component */}
+      <Hours />
+
       {/* Create a card for each pet */}
       {pets.map((pet) => (
         <div key={pet._id}>
