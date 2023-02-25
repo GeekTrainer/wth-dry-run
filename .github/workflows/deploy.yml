@@ -22,3 +22,4 @@ jobs:
           appSourcePath: ${{ github.workspace }}
           acrName: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
           resourceGroup: ${{ secrets.AZURE_RG }}
+          containerAppName: ${{ secrets.AZURE_CONTAINER_APP }}
