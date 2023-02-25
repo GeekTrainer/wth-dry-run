@@ -23,7 +23,7 @@ const Hours = () => {
         <div>
             <h2>Hours</h2>
             <p>
-                Today's hours are {hours.open} to {hours.close}.
+                Today's we are open from {hours.open} to {hours.close}.
             </p>
         </div>
     );
