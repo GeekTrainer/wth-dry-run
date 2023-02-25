@@ -136,14 +136,18 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
     template: {
       containers: [
         {
-          name: 'app-container'
+          name: '${namePrefix}containerapp'
           image: 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
           env: [
             {
-              name: 'COSMOSDB_CONNECTION_STRING'
+              name: 'MONGODB_URI'
               secretRef: 'cosmosdb-connection-string'
             }
           ]
+          resources: {
+            cpu: '0.5'
+            memory: '1.0Gi'
+          }
         }
       ]
     }  
